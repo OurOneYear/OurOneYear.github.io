@@ -26,7 +26,7 @@ function typeWriter(text, para){
 }
 
 function sideTypeWriter(text, para) {
-	if(ok == 2){
+	if(t > 1){
 		clearInterval(sideTypeInterval);
 	}
 	
