@@ -8,8 +8,9 @@
 	</head>
 
 	<body style="margin:0px">
-		<audio autoplay loop>
+		<audio id = "player" autoplay loop>
 			<source src="music/music.mp3" type="audio/mpeg">
+				Your computer browser does not support audio
 		</audio>
 		<canvas></canvas>
 		<div id="imgTxt">
@@ -47,6 +48,11 @@
 		</div>
 
 		<script >
+			document.addEventListener('click', musicPlay);
+			function musicPlay() {
+				document.getElementById('player').play();
+				document.removeEventListener('click', musicPlay);
+			}
 			var ok = 0;
 			var flag = 1;
 			var myImage = document.getElementById("img");
