@@ -4,7 +4,7 @@ dv.style.opacity = 0;
 var val = 0;
 
 function timer(){
-	var start = new Date("11/25/2019");
+	var start = new Date("11/24/2019");
 	var now = new Date();
 	var t = now - start;
 	var d = Math.floor(t / (1000 * 60 * 60 * 24));
